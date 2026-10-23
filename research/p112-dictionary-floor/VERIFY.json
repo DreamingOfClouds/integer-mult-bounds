@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 600,
+      "checks": "Rebuild the #5088 dictionary from its pinned verifier and own code; check frames, census, automorphism generators and orbits; prove the <=8, 9 and 10-term cases and the atom43 extension; coordinate positive control."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py",
+        "--cross-check"
+      ],
+      "timeout_seconds": 600,
+      "checks": "Independent re-implementation of every exact step (row-span prices, direct frame scan, union-find orbits in another labelling, colouring-bound clique search, line-driven completion) with a non-vacuity control."
+    }
+  ]
+}

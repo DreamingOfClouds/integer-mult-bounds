@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "task_id": "complex-rank-shape-decoder",
+  "priority_revision": 7,
+  "base_commit": "b9a13c1673e0e9697de410de16e8bbf3207a7363",
+  "original_card": {
+    "id": "complex-rank-shape-decoder",
+    "question": "Can a decoder deliver the local paid mass in fewer, larger-rank children (block frame climbs instead of rank-1 to rank-3 steps)?",
+    "starting_points": [
+      "docs/research/research-family-status.md",
+      "research/complex-local-word-ceiling/README.md",
+      "research/complex-decoder-field-extension-seed44/README.md",
+      "research/complex-frame-pair-decoders/README.md",
+      "research/selected-k8-unrestricted-ends/README.md",
+      "research/eisenstein-reduction-copy-floor/README.md"
+    ],
+    "methods": [
+      "Find one exact small decoding identity whose frame path climbs in blocks, and price its complete per-call profile.",
+      "Bound the best effective child rank achievable for one fixed support alphabet, including copies, frames and restoration."
+    ],
+    "acceptance_gate": "A per-call local profile, with all copied information, frames and restoration counted, whose ceiling exceeds the selected word's by at least 5%; masked or overcomplete supports must change an assumption of the eight-term all-pairs bound. A scoped local result may be retained without a complete supplier. Expanding it into further construction rounds requires the family-level budget and obligation gate in research-family-status.md; an optimistic passing relaxation alone is not acceptance.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "research/complex-local-word-ceiling/verify.py"
+      ],
+      "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+      "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+      "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Before any synthesis, write the candidate per-call local profile (and centre charge / unpaid coordinates if changed) and screen it with ceiling.ceiling(); reject it if even the ideal ceiling does not beat the selected word's by your stated margin. Ideal budget: rank-16 delivery is 2.31x (levers.py).",
+    "bottleneck_link": "Rank-1 children are about half of recursive cost; the selected word's effective child rank is about 3.9. Larger-rank delivery lowers recursive cost per unit of paid mass.",
+    "allowed_variations": [
+      "One masked, overcomplete or block decoder family with exact labels and supports.",
+      "A scoped lower bound on effective rank for one alphabet.",
+      "If the coverage law, template or guard changes, derive an applicable fully charged replacement bound instead of applying the incumbent ceiling outside its scope."
+    ],
+    "scope_change_triggers": [
+      "Repacking idle remainders of an unchanged word (covered by the packing ceiling).",
+      "Repeating the eight-term all-pairs search inside its proved scope.",
+      "Only changing helper terminal subspaces and monotone frames within the fixed scalar word, entrances and cleanup contract already covered by #1995/#2013.",
+      "Searching below C=40 in the #2017 Eisenstein binary scalar-rectangle or fixed-support block-linear additive pairing model; specify a changed premise instead. This bound does not cover every complex decoder.",
+      "Continuing a partial cost improvement while leaving the same unpriced consumer, restoration or central-readout obligation unresolved; refresh the family expansion decision first. Local product-retiming evidence has a narrow scope and is not a ban on changed graphs or contracts."
+    ],
+    "overlap_terms": [
+      "rank shape",
+      "block climb",
+      "masked decoder",
+      "overcomplete",
+      "effective rank"
+    ]
+  },
+  "scope_status": "changed",
+  "actual_scope": "Exact lower bound for one fixed support alphabet: masked rank-1 P112 decoders whose symmetric support caps come from the #5088 two-star dictionary (16,556 supports), priced at the cap; plus the atom43 interleaved term.",
+  "scope_change_reason": "Answers #5088's open bounded search (cost <= 63) instead of building a new per-call profile: a scoped lower bound on one alphabet, as allowed by the card's variations. No supplier, coefficients or kappa.",
+  "bottleneck_link": "A decoder below COPY64 would change the eight centre-copy calls; this closes that route for the #5088 dictionary.",
+  "budget_minutes": 120,
+  "stop_rule": "Exhaustive enumeration under frames >= 8, lines >= 1, price >= 6; stop at the first proof or the first cost <= 63 support cover.",
+  "outcome": "negative-result",
+  "evidence": "verify.py rebuilds the dictionary from #5088's pinned verifier, proves the 8/9/10-term cases and the atom43 extension, and has an independent --cross-check mode. Saved logs in data/.",
+  "author": "Claude Opus 5.5 (Anthropic), via Claude Code",
+  "ai_assistance": "Research, implementation and writing by Claude Opus 5.5 (Anthropic), via Claude Code; enumeration re-implemented by an independent AI auditor. No human or formal proof review.",
+  "open_questions": [
+    {
+      "question": "Can cheap clique-like terms (cost-1 rank-1 terms on frame cliques, KFAM rank-1 lows, CT8-INT T-block Ferrers terms) together with the dictionary reach cost <= 63?",
+      "why_it_matters": "The frame argument rests on frames met per unit cost <= 170; a cost-1 term on a frame clique meets 459 frames, so the cap says nothing about such mixes.",
+      "first_step": "Add clique-cap terms, priced at their cap, to the dictionary and rerun the 9/10-term enumeration with per-term frame rank in place of frames met.",
+      "blocked_by": "A clique-cap price that matches the PR717 cost model, and a normalisation for the larger term set."
+    },
+    {
+      "question": "Does the frame argument extend beyond the #5088 dictionary to wider symmetric-cap families?",
+      "why_it_matters": "The proof used only price >= 6, frames >= 8 and lines >= 1, so any family with the same price floor and rank-6 shared-miss property may obey the same floor.",
+      "first_step": "Find the largest symmetric-cap family (e.g. intersections of three stars) keeping price >= 6 and the rank-6 shared-miss property, and rerun verify.py on it.",
+      "blocked_by": "Non-symmetric caps break the frames-met count, and the 10-term completion grows with family size."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "base_commit": "b9a13c1673e0e9697de410de16e8bbf3207a7363",
+  "files": [
+    {
+      "path": "docs/research/agent-task-catalog.json",
+      "usage": "provenance",
+      "git_blob": "64bfc5af6709ed9811171e0a2108f05e1219cb65",
+      "sha256": "352a6184713b8843d96fd2c2071eb7aeaa655906b7c51d45ad444912666c8a96"
+    },
+    {
+      "path": "research/masked-two-star-supports/verify.py",
+      "usage": "provenance",
+      "pin": "head:ce35592fc32351125435ecfd9f3f809bb898d312:research/masked-two-star-supports/verify.py",
+      "git_blob": "b51e37fa045ebec935e9491e43615eca0a940b00",
+      "sha256": "bc7e41ed70e095dbabd19ab4f8836bd299a64ee12872b7debc3eb33f04df7228"
+    },
+    {
+      "path": "research/masked-two-star-supports/RESULT.json",
+      "usage": "provenance",
+      "pin": "head:ce35592fc32351125435ecfd9f3f809bb898d312:research/masked-two-star-supports/RESULT.json",
+      "git_blob": "e9450dcb898b81954f82ec404a71fc0a3e300995",
+      "sha256": "d650e675ea6457f8fb165cc198db72f3f2cfe358271c3f020f6440d45792e9a0"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+ "atom_frame_rank": 101,
+ "atom_frames": 101,
+ "dictionary_sha256": "9f62e399532aaff3be299a6efc23450d7af04cd2351fb56ff91d2f5714c9dd50",
+ "max_efficiency": 170,
+ "min_miss_price_le7": 90,
+ "mode": "cross-check",
+ "pr5088_head": "ce35592fc32351125435ecfd9f3f809bb898d312",
+ "python": "3.12.14",
+ "rank6_rankQ": 7,
+ "seconds": 159.8,
+ "status": "PASS",
+ "xc_m9": {
+  "0": 7,
+  "1": 6,
+  "2": 7,
+  "3": 7,
+  "4": 7,
+  "5": 7,
+  "6": 8,
+  "7": 4
+ },
+ "xc_sets7": 2208
+}

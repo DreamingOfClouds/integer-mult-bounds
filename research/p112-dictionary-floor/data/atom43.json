@@ -1,0 +1,124 @@
+{
+ "description": "atom43: an interleaved (Ferrers) masked term on 4 target lines x 5 source lines. Delivered pattern S[r][c] = 1 iff level(c) <= level(r). Lines given as E8 root vectors (scaled by 2 as in #5088).",
+ "rows": [
+  {
+   "root": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2
+   ],
+   "level": 1
+  },
+  {
+   "root": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "level": 3
+  },
+  {
+   "root": [
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "level": 3
+  },
+  {
+   "root": [
+    1,
+    -1,
+    -1,
+    1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "level": 2
+  }
+ ],
+ "cols": [
+  {
+   "root": [
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "level": 3
+  },
+  {
+   "root": [
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "level": 2
+  },
+  {
+   "root": [
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "level": 3
+  },
+  {
+   "root": [
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "level": 1
+  },
+  {
+   "root": [
+    1,
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "level": 1
+  }
+ ]
+}

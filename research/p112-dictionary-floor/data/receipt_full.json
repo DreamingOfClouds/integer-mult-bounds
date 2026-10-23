@@ -1,0 +1,27 @@
+{
+ "atom_frame_rank": 101,
+ "atom_frames": 101,
+ "dictionary_sha256": "9f62e399532aaff3be299a6efc23450d7af04cd2351fb56ff91d2f5714c9dd50",
+ "m10_covering": 0,
+ "m10_frame_feasible_completions": 612304,
+ "m9_max_clique_by_orbit": {
+  "0": 7,
+  "3": 7,
+  "6": 7,
+  "7": 7,
+  "8": 7,
+  "9": 7,
+  "10": 6,
+  "11": 8
+ },
+ "max_efficiency": 170,
+ "min_miss_price_le7": 90,
+ "mode": "primary",
+ "orbit11_8sets_containing_rep": 4718592,
+ "pr5088_head": "ce35592fc32351125435ecfd9f3f809bb898d312",
+ "python": "3.12.14",
+ "rank6_rankQ": 7,
+ "seconds": 146.9,
+ "sets7": 1248,
+ "status": "PASS"
+}
